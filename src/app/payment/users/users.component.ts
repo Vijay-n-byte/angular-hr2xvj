@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css'],
+  selector: 'app-users',
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.css'],
 })
-export class CartComponent implements OnInit {
+export class UsersComponent implements OnInit {
+
+  user:any;
   users: Array<{id:number,name:string,username:string,email:string,address:any}> = [
     {
       id: 1,
@@ -176,7 +179,15 @@ export class CartComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor( private sam:ActivatedRoute) {
+    
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.sam.params.subscribe((params) =>{
+      this.user=this.users.filter((user)=>{
+        return user.id === +params.id;
+      })[0];
+    });
+  }
 }

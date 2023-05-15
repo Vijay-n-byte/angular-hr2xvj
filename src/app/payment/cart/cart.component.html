@@ -1,1 +1,14 @@
-<h6>cart works</h6>
+<h4>cart works</h4>
+<div>
+  <div>
+    <ul>
+      <li *ngFor="let u of users">
+        <a routerLink="./{{u.id}}">{{u.name}}</a>
+      </li>
+    </ul>
+  </div>
+  <hr>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
