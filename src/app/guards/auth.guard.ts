@@ -28,6 +28,8 @@ export class authGuard implements CanActivate,CanActivateChild,CanDeactivate<mes
     component:messagedetailsguard,
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
+      console.log(ActivatedRouteSnapshot);
+      console.log(RouterStateSnapshot);
     return component.confirm1();
   }
 
