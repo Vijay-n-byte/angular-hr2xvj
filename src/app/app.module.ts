@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PaymentModule } from './payment/payment.module';
 import { RoutingAppModule } from './routing-app/routing-app.module';
+import { MessageComponent } from './message/message.component';
 
 
 
@@ -16,10 +17,9 @@ import { RoutingAppModule } from './routing-app/routing-app.module';
     CommonModule,
     BrowserModule,
     PaymentModule,
-    RoutingAppModule
-
+    RoutingAppModule,
   ],
-  declarations: [AppComponent,HomeComponent,LoginComponent],
+  declarations: [AppComponent,HomeComponent,LoginComponent,MessageComponent],
   bootstrap: [
     AppComponent
     ]
