@@ -3,6 +3,7 @@ import { Router, RouterModule, Routes } from '@angular/router';
 import { authGuard } from '../guards/auth.guard';
 import { HomeComponent } from '../home/home.component';
 import { HomedetailsComponent } from '../homedetails/homedetails.component';
+import { InfoComponent } from '../info/info.component';
 import { LoginComponent } from '../login/login.component';
 import { MessageComponent } from '../message/message.component';
 import { CartComponent } from '../payment/cart/cart.component';
@@ -17,6 +18,7 @@ const routelements:Routes=[
   {path:':id', component:UsersComponent}
   ]},
   {path:'message',component:MessageComponent,canDeactivate:[authGuard]},
+  {path:'info',component:InfoComponent},
   {path:'**', redirectTo:'/home' ,pathMatch:'full'}
 ]
 

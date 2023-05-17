@@ -9,6 +9,10 @@ import { RoutingAppModule } from './routing-app/routing-app.module';
 import { MessageComponent } from './message/message.component';
 import { serviceService } from './services/service.service';
 import { HomedetailsComponent } from './homedetails/homedetails.component';
+import { InfoComponent } from './info/info.component';
+import { Sample1Service } from './services/sample1.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -17,12 +21,13 @@ import { HomedetailsComponent } from './homedetails/homedetails.component';
     BrowserModule,
     PaymentModule,
     RoutingAppModule,
+    HttpClientModule
   ],
-  declarations: [AppComponent,HomeComponent,LoginComponent,MessageComponent,HomedetailsComponent],
+  declarations: [AppComponent,HomeComponent,LoginComponent,MessageComponent,HomedetailsComponent,InfoComponent],
   bootstrap: [
     AppComponent
     ],
-  providers:[serviceService],
+  providers:[serviceService,Sample1Service],
     
 })
 export class AppModule { }
