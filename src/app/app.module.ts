@@ -7,9 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { PaymentModule } from './payment/payment.module';
 import { RoutingAppModule } from './routing-app/routing-app.module';
 import { MessageComponent } from './message/message.component';
-
-
-
+import { serviceService } from './services/service.service';
 
 
 @NgModule({
@@ -22,7 +20,9 @@ import { MessageComponent } from './message/message.component';
   declarations: [AppComponent,HomeComponent,LoginComponent,MessageComponent],
   bootstrap: [
     AppComponent
-    ]
+    ],
+  providers:[serviceService],
+    
 })
 export class AppModule { }
 
