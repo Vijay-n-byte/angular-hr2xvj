@@ -15,4 +15,8 @@ export class serviceService {
   getusers():userdetails[]{
     return this.use;
   }
+
+  getsingleuser(rr:number):userdetails{
+    return this.use.filter(u=>u.id===rr)[0];
+  }
 }

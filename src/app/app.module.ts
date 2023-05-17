@@ -8,6 +8,7 @@ import { PaymentModule } from './payment/payment.module';
 import { RoutingAppModule } from './routing-app/routing-app.module';
 import { MessageComponent } from './message/message.component';
 import { serviceService } from './services/service.service';
+import { HomedetailsComponent } from './homedetails/homedetails.component';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { serviceService } from './services/service.service';
     PaymentModule,
     RoutingAppModule,
   ],
-  declarations: [AppComponent,HomeComponent,LoginComponent,MessageComponent],
+  declarations: [AppComponent,HomeComponent,LoginComponent,MessageComponent,HomedetailsComponent],
   bootstrap: [
     AppComponent
     ],
