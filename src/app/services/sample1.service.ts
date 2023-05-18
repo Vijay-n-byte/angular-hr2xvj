@@ -18,6 +18,6 @@ export class Sample1Service {
   }
 
   getsingleuserviarestapi(id:number):Observable<Userinfo>{
-    return this.sim=this.h.get<Userinfo>(`{{this.rooturl}}+/{{this.id}}`);
+    return this.h.get<Userinfo>(`${this.rooturl}/${id}`);
   }
 }

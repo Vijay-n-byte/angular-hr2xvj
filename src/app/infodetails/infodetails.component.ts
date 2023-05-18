@@ -17,6 +17,7 @@ export class InfodetailsComponent implements OnInit {
     this.dd.params.subscribe(params=>{
       this.ss.getsingleuserviarestapi(+params['id']).subscribe(
         u=> this.using=u
+        
       );
     });
   }

@@ -2,7 +2,8 @@
 info works!.example of restapi service.
 </p>
 <hr>
+<router-outlet></router-outlet>
+<hr>
 <ul>
   <li *ngFor="let f of u"><a routerLink="./{{f.id}}">{{f.id}}</a></li>
 </ul>
-<router-outlet></router-outlet>
