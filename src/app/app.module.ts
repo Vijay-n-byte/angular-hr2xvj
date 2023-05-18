@@ -12,6 +12,7 @@ import { HomedetailsComponent } from './homedetails/homedetails.component';
 import { InfoComponent } from './info/info.component';
 import { Sample1Service } from './services/sample1.service';
 import { HttpClientModule } from '@angular/common/http';
+import { InfodetailsComponent } from './infodetails/infodetails.component';
 
 
 
@@ -23,7 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     RoutingAppModule,
     HttpClientModule
   ],
-  declarations: [AppComponent,HomeComponent,LoginComponent,MessageComponent,HomedetailsComponent,InfoComponent],
+  declarations: [AppComponent,HomeComponent,LoginComponent,MessageComponent,HomedetailsComponent,InfoComponent,InfodetailsComponent],
   bootstrap: [
     AppComponent
     ],

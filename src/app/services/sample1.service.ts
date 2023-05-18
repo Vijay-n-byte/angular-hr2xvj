@@ -16,4 +16,8 @@ export class Sample1Service {
   getuserinfoviarest():Observable<Userinfo[]>{
     return this.sim=this.h.get<Userinfo[]>(this.rooturl);
   }
+
+  getsingleuserviarestapi(id:number):Observable<Userinfo>{
+    return this.sim=this.h.get<Userinfo>(`{{this.rooturl}}+/{{this.id}}`);
+  }
 }
