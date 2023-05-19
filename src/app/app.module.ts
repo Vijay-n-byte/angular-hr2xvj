@@ -13,8 +13,7 @@ import { InfoComponent } from './info/info.component';
 import { Sample1Service } from './services/sample1.service';
 import { HttpClientModule } from '@angular/common/http';
 import { InfodetailsComponent } from './infodetails/infodetails.component';
-
-
+import { SampleComponent } from './sample/sample.component';
 
 @NgModule({
   imports: [
@@ -22,14 +21,19 @@ import { InfodetailsComponent } from './infodetails/infodetails.component';
     BrowserModule,
     PaymentModule,
     RoutingAppModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  declarations: [AppComponent,HomeComponent,LoginComponent,MessageComponent,HomedetailsComponent,InfoComponent,InfodetailsComponent],
-  bootstrap: [
-    AppComponent
-    ],
-  providers:[serviceService,Sample1Service],
-    
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    MessageComponent,
+    HomedetailsComponent,
+    InfoComponent,
+    InfodetailsComponent,
+    SampleComponent,
+  ],
+  bootstrap: [AppComponent],
+  providers: [serviceService, Sample1Service],
 })
-export class AppModule { }
-
+export class AppModule {}

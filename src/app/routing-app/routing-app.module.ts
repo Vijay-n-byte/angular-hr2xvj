@@ -9,6 +9,7 @@ import { LoginComponent } from '../login/login.component';
 import { MessageComponent } from '../message/message.component';
 import { CartComponent } from '../payment/cart/cart.component';
 import { UsersComponent } from '../payment/users/users.component';
+import { SampleComponent } from '../sample/sample.component';
 
 const routelements:Routes=[
   {path:'home' , component:HomeComponent,children:[{path:':id',component:HomedetailsComponent}]},
@@ -20,6 +21,7 @@ const routelements:Routes=[
   ]},
   {path:'message',component:MessageComponent,canDeactivate:[authGuard]},
   {path:'info',component:InfoComponent,children:[{path:':id',component:InfodetailsComponent}]},
+  {path:'sample',component:SampleComponent},
   {path:'**', redirectTo:'/home' ,pathMatch:'full'}
 ]
 
