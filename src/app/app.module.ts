@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { InfodetailsComponent } from './infodetails/infodetails.component';
 import { SampleComponent } from './sample/sample.component';
 import { SamplechildComponent } from './sample/samplechild/samplechild.component';
+import { Mod1Module } from './mod1/mod1.module';
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { SamplechildComponent } from './sample/samplechild/samplechild.component
     PaymentModule,
     RoutingAppModule,
     HttpClientModule,
+    Mod1Module,
   ],
   declarations: [
     AppComponent,
