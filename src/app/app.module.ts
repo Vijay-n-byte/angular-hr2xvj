@@ -14,7 +14,6 @@ import { Sample1Service } from './services/sample1.service';
 import { HttpClientModule } from '@angular/common/http';
 import { InfodetailsComponent } from './infodetails/infodetails.component';
 import { SampleComponent } from './sample/sample.component';
-import { SamplechildComponent } from './sample/samplechild/samplechild.component';
 import { Mod1Module } from './mod1/mod1.module';
 
 @NgModule({
@@ -35,7 +34,6 @@ import { Mod1Module } from './mod1/mod1.module';
     InfoComponent,
     InfodetailsComponent,
     SampleComponent,
-    SamplechildComponent
   ],
   bootstrap: [AppComponent],
   providers: [serviceService, Sample1Service],
